@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="京东物流官网视觉复刻课程作业，使用 Vibe Coding 完成。"
+    />
+    <title>京东物流 | 省心高效 · 技术驱动</title>
+    <link rel="icon" href="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/images/home/logo-s.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <span>集团网站</span>
+        <span class="utility-divider"></span>
+        <span>简体中文</span>
+        <span class="utility-divider"></span>
+        <a href="#footer">登录</a>
+      </div>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="京东物流首页">
+          <img src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/images/home/logo-s.png" alt="京东物流" />
+        </a>
+
+        <button class="menu-toggle" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="主导航">
+          <a class="active" href="#top">首页</a>
+          <a href="#services">服务与产品</a>
+          <a href="#solutions">解决方案</a>
+          <a href="#support">服务支持</a>
+          <a href="#sustainability">可持续发展</a>
+          <a href="#about">关于京东物流</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="京东物流轮播图">
+        <div class="hero-slides">
+          <article class="hero-slide active">
+            <div class="hero-copy">
+              <span class="eyebrow">一体化供应链解决方案专家</span>
+              <h1>助力企业降本增效</h1>
+              <p>以技术驱动供应链，以网络连接千万企业。</p>
+              <a class="hero-link" href="#services">探索物流服务 <span>→</span></a>
+            </div>
+          </article>
+          <article class="hero-slide">
+            <div class="hero-copy light-copy">
+              <span class="eyebrow">高效可靠的快递服务</span>
+              <h1>今天寄，明天到</h1>
+              <p>跨省急件选京东特快，让每一次托付准时抵达。</p>
+              <a class="hero-link" href="#express">立即寄件 <span>→</span></a>
+            </div>
+          </article>
+          <article class="hero-slide">
+            <div class="hero-copy light-copy">
+              <span class="eyebrow">全渠道多平台送仓</span>
+              <h1>大促备货<br />用京东物流</h1>
+              <p>准时送仓，省心托付，让好生意快人一步。</p>
+              <a class="hero-link" href="#solutions">查看解决方案 <span>→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-panel container">
+          <form class="tracking-card" id="tracking-form">
+            <label for="tracking-number">查快递</label>
+            <div class="tracking-input">
+              <span aria-hidden="true">⌕</span>
+              <input
+                id="tracking-number"
+                name="tracking"
+                placeholder="请输入运单号或包裹号"
+                autocomplete="off"
+              />
+              <button type="submit">查快递</button>
+            </div>
+            <p id="tracking-message" aria-live="polite"></p>
+          </form>
+
+          <div class="quick-actions" id="express">
+            <a href="#contact">
+              <span class="quick-icon">↗</span>
+              <strong>我要寄件</strong>
+              <small>寄多件更方便</small>
+            </a>
+            <a href="#services">
+              <span class="quick-icon">◷</span>
+              <strong>运费&amp;时效查询</strong>
+              <small>快速预估</small>
+            </a>
+            <a href="#network">
+              <span class="quick-icon">◎</span>
+              <strong>服务范围</strong>
+              <small>覆盖全球</small>
+            </a>
+            <a href="#network">
+              <span class="quick-icon">⌖</span>
+              <strong>网点查询</strong>
+              <small>就近服务</small>
+            </a>
+          </div>
+        </div>
+
+        <button class="carousel-arrow prev" aria-label="上一张">‹</button>
+        <button class="carousel-arrow next" aria-label="下一张">›</button>
+        <div class="hero-dots" aria-label="轮播图分页"></div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <span></span>
+            <h2>面向丰富场景的物流服务</h2>
+            <span></span>
+          </div>
+          <p class="section-subtitle">
+            从快递快运到国际供应链，提供覆盖全链路的一体化物流服务
+          </p>
+
+          <div class="service-tabs" role="tablist" aria-label="物流服务">
+            <button class="service-tab active" data-service="express" role="tab">
+              快递快运服务
+            </button>
+            <button class="service-tab" data-service="warehouse" role="tab">
+              仓配一体服务
+            </button>
+            <button class="service-tab" data-service="bulky" role="tab">
+              大件服务
+            </button>
+            <button class="service-tab" data-service="cold" role="tab">
+              冷链服务
+            </button>
+            <button class="service-tab" data-service="global" role="tab">
+              国际物流
+            </button>
+            <button class="service-tab" data-service="tech" role="tab">
+              物流科技
+            </button>
+          </div>
+
+          <div class="service-stage">
+            <div class="service-visual">
+              <img
+                id="service-image"
+                src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/v4/home/service/express.png"
+                alt="快递快运服务"
+              />
+            </div>
+            <div class="service-content">
+              <span class="pill">全场景 · 全链路</span>
+              <h3 id="service-title">快递快运服务</h3>
+              <p id="service-description">
+                向企业及个人客户提供安全可靠、时效领先、专业贴心的快递及快运服务，以及在此基础上的多种增值服务。
+              </p>
+              <div class="service-links">
+                <a href="#contact">立即咨询 <span>→</span></a>
+                <a href="#support">查看产品服务 <span>→</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section solutions" id="solutions">
+        <div class="container">
+          <div class="section-heading">
+            <span></span>
+            <h2>热门行业解决方案</h2>
+            <span></span>
+          </div>
+          <p class="section-subtitle">
+            京东物流完善的服务体系为企业保驾护航
+          </p>
+
+          <div class="solution-layout">
+            <div class="solution-tabs">
+              <button class="solution-tab active" data-solution="retail">
+                <img src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/v3/home/solution/icon-consumer.png" alt="" />
+                <span>快消</span>
+                <small>零售与渠道履约</small>
+              </button>
+              <button class="solution-tab" data-solution="fashion">
+                <img src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/v3/home/solution/icon-dress.png" alt="" />
+                <span>服装</span>
+                <small>智能库存协同</small>
+              </button>
+              <button class="solution-tab" data-solution="appliance">
+                <img src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/v3/home/solution/icon-homeAppliances.png" alt="" />
+                <span>家电</span>
+                <small>大件仓配安装</small>
+              </button>
+              <button class="solution-tab" data-solution="3c">
+                <img src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/v3/home/solution/icon-digital.png" alt="" />
+                <span>3C</span>
+                <small>高值精细管理</small>
+              </button>
+              <button class="solution-tab" data-solution="auto">
+                <img src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/v3/home/solution/icon-car.png" alt="" />
+                <span>汽车</span>
+                <small>零部件供应链</small>
+              </button>
+              <button class="solution-tab" data-solution="fresh">
+                <img src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/v3/home/solution/icon-fresh.png" alt="" />
+                <span>生鲜</span>
+                <small>全程温控保鲜</small>
+              </button>
+            </div>
+
+            <div class="solution-card">
+              <div class="solution-content">
+                <span class="mini-tag" id="solution-tag">快消行业</span>
+                <h3 id="solution-title">全渠道高效履约</h3>
+                <p id="solution-description">
+                  为消费品行业客户提供数字化、可视化、智能化的一体解决方案，向客户提供全渠道端到端服务，实现供应链升级。
+                </p>
+                <ul id="solution-points">
+                  <li>多渠道多场景的供应链服务能力</li>
+                  <li>广泛的物流网络覆盖能力</li>
+                  <li>柔性履约与智能库存协同</li>
+                </ul>
+                <a href="#contact" class="primary-button">了解更多</a>
+              </div>
+              <div class="solution-atmosphere" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="route-line"></div>
+                <div class="solution-number" id="solution-number">01</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section network" id="network">
+        <div class="container">
+          <div class="section-heading">
+            <span></span>
+            <h2>物流网络</h2>
+            <span></span>
+          </div>
+          <p class="section-subtitle">
+            遍布全球的基础设施，为物流提供快速稳定、智能可靠的服务
+          </p>
+
+          <div class="network-feature">
+            <div class="network-icon">JDL</div>
+            <div>
+              <span>六大物流网络</span>
+              <p>仓储、综合运输、最后一公里配送、大件、冷链与跨境物流网络协同运行。</p>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat">
+              <strong><span class="counter" data-target="3600">0</span>+</strong>
+              <p>个仓库</p>
+              <small>覆盖全国的高效仓储网络</small>
+            </article>
+            <article class="stat">
+              <strong><span class="counter" data-target="3400">0</span>万</strong>
+              <p>平方米</p>
+              <small>仓库总管理面积持续增长</small>
+            </article>
+            <article class="stat">
+              <strong><span class="counter" data-target="25">0</span></strong>
+              <p>个国家与地区</p>
+              <small>海外仓网络连接全球市场</small>
+            </article>
+            <article class="stat">
+              <strong>7×24</strong>
+              <p>小时服务</p>
+              <small>全天候响应每一次托付</small>
+            </article>
+          </div>
+
+          <div class="network-banner">
+            <div>
+              <span>全网覆盖</span>
+              <span>数实融合</span>
+              <span>全链共生</span>
+            </div>
+            <a href="#contact">咨询物流网络方案 →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section values" id="sustainability">
+        <div class="container values-grid">
+          <div class="value-intro">
+            <span>可持续 · 共成长</span>
+            <h2>以供应链创造更大价值</h2>
+            <p>
+              从客户价值、产业协同到绿色低碳，京东物流持续推动技术、人才与基础设施投入，让供应链更有韧性，让社会发展更可持续。
+            </p>
+            <a href="#news">了解 ESG 进展 →</a>
+          </div>
+          <div class="value-cards">
+            <article>
+              <span>01</span>
+              <h3>客户为先</h3>
+              <p>以体验为中心，持续创造可感知的服务价值。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>技术驱动</h3>
+              <p>用数字化与智能化重塑仓储、运输和末端履约。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>绿色低碳</h3>
+              <p>推动全链路节能减排，共建高效、绿色的供应链。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section news" id="news">
+        <div class="container">
+          <div class="news-head">
+            <div>
+              <span class="section-kicker">NEWS</span>
+              <h2>新闻动态</h2>
+            </div>
+            <a href="#footer">更多新闻 →</a>
+          </div>
+          <div class="news-grid">
+            <article class="news-card featured">
+              <div class="news-art art-one"><span>JDL</span></div>
+              <div>
+                <span class="news-date">2026.05.12</span>
+                <h3>一图看懂！京东物流 Q1 收入同比增长 29%，创上市以来一季度最佳利润表现</h3>
+                <a href="#footer">查看详情</a>
+              </div>
+            </article>
+            <article class="news-card">
+              <div class="news-art art-two"><span>ESG</span></div>
+              <div>
+                <span class="news-date">2026.04.25</span>
+                <h3>一图读懂京东物流 2025 年 ESG 报告</h3>
+                <a href="#footer">查看详情</a>
+              </div>
+            </article>
+            <article class="news-card">
+              <div class="news-art art-three"><span>TECH</span></div>
+              <div>
+                <span class="news-date">2026.04.23</span>
+                <h3>全球最高标准！京东物流斩获国际软件研发奖项</h3>
+                <a href="#footer">查看详情</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="support" id="support">
+        <div class="container support-grid">
+          <article>
+            <span>服务支持</span>
+            <h3>寄快递 / 查快递</h3>
+            <p>从下单到签收，随时掌握包裹动态。</p>
+            <a href="#top">立即查询 →</a>
+          </article>
+          <article id="contact">
+            <span>联系我们</span>
+            <h3>950616</h3>
+            <p>专业团队随时响应您的物流需求。</p>
+            <a href="tel:950616">电话咨询 →</a>
+          </article>
+          <article id="about">
+            <span>关于我们</span>
+            <h3>技术驱动的供应链服务商</h3>
+            <p>为客户提供一体化供应链与物流服务。</p>
+            <a href="#footer">公司介绍 →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <img src="https://jdl-oss.s3-cache-accelerate.cn-north-1.jdcloud-oss.com/static/images/home/logo-s.png" alt="京东物流" />
+          <p>省心 · 高效</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong>京东服务</strong>
+            <a href="#services">快递快运</a>
+            <a href="#services">仓配一体</a>
+            <a href="#services">国际物流</a>
+          </div>
+          <div>
+            <strong>最新资讯</strong>
+            <a href="#news">新闻动态</a>
+            <a href="#sustainability">ESG</a>
+            <a href="#about">投资者关系</a>
+          </div>
+          <div>
+            <strong>便捷入口</strong>
+            <a href="#express">我要寄件</a>
+            <a href="#top">查快递</a>
+            <a href="#support">服务支持</a>
+          </div>
+          <div>
+            <strong>关于我们</strong>
+            <a href="#about">公司介绍</a>
+            <a href="#contact">联系我们</a>
+            <a href="#network">物流网络</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 京东物流复刻页面 · 北京航空航天大学课程实践作品</span>
+        <span>本页面仅用于课程学习，非京东物流官方网站</span>
+      </div>
+    </footer>
+
+    <button class="back-top" aria-label="返回顶部">↑</button>
+    <button class="floating-service" aria-label="在线客服">服务</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
